@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		914ED9991C08141300F3F10D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914ED9981C08141300F3F10D /* AppKit.framework */; };
+		914ED99B1C08141300F3F10D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914ED99A1C08141300F3F10D /* Foundation.framework */; };
+		914ED99F1C08141300F3F10D /* XCCodeSign.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 914ED99E1C08141300F3F10D /* XCCodeSign.xcscheme */; };
+		914ED9A21C08141300F3F10D /* XCCodeSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED9A11C08141300F3F10D /* XCCodeSign.m */; };
+		914ED9A51C08141300F3F10D /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED9A41C08141300F3F10D /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		914ED9951C08141300F3F10D /* XCCodeSign.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCCodeSign.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		914ED9981C08141300F3F10D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		914ED99A1C08141300F3F10D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		914ED99E1C08141300F3F10D /* XCCodeSign.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = XCCodeSign.xcscheme; path = XCCodeSign.xcodeproj/xcshareddata/xcschemes/XCCodeSign.xcscheme; sourceTree = SOURCE_ROOT; };
+		914ED9A01C08141300F3F10D /* XCCodeSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCCodeSign.h; sourceTree = "<group>"; };
+		914ED9A11C08141300F3F10D /* XCCodeSign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCCodeSign.m; sourceTree = "<group>"; };
+		914ED9A31C08141300F3F10D /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		914ED9A41C08141300F3F10D /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		914ED9A61C08141300F3F10D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		914ED9931C08141300F3F10D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914ED9991C08141300F3F10D /* AppKit.framework in Frameworks */,
+				914ED99B1C08141300F3F10D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		914ED98C1C08141300F3F10D = {
+			isa = PBXGroup;
+			children = (
+				914ED99C1C08141300F3F10D /* XCCodeSign */,
+				914ED9971C08141300F3F10D /* Frameworks */,
+				914ED9961C08141300F3F10D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		914ED9961C08141300F3F10D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				914ED9951C08141300F3F10D /* XCCodeSign.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		914ED9971C08141300F3F10D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				914ED9981C08141300F3F10D /* AppKit.framework */,
+				914ED99A1C08141300F3F10D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		914ED99C1C08141300F3F10D /* XCCodeSign */ = {
+			isa = PBXGroup;
+			children = (
+				914ED9A01C08141300F3F10D /* XCCodeSign.h */,
+				914ED9A11C08141300F3F10D /* XCCodeSign.m */,
+				914ED9A31C08141300F3F10D /* NSObject_Extension.h */,
+				914ED9A41C08141300F3F10D /* NSObject_Extension.m */,
+				914ED9A61C08141300F3F10D /* Info.plist */,
+				914ED99D1C08141300F3F10D /* Supporting Files */,
+			);
+			path = XCCodeSign;
+			sourceTree = "<group>";
+		};
+		914ED99D1C08141300F3F10D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				914ED99E1C08141300F3F10D /* XCCodeSign.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		914ED9941C08141300F3F10D /* XCCodeSign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 914ED9A91C08141300F3F10D /* Build configuration list for PBXNativeTarget "XCCodeSign" */;
+			buildPhases = (
+				914ED9911C08141300F3F10D /* Sources */,
+				914ED9921C08141300F3F10D /* Resources */,
+				914ED9931C08141300F3F10D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCCodeSign;
+			productName = XCCodeSign;
+			productReference = 914ED9951C08141300F3F10D /* XCCodeSign.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		914ED98D1C08141300F3F10D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = annidyfeng;
+				TargetAttributes = {
+					914ED9941C08141300F3F10D = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 914ED9901C08141300F3F10D /* Build configuration list for PBXProject "XCCodeSign" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 914ED98C1C08141300F3F10D;
+			productRefGroup = 914ED9961C08141300F3F10D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				914ED9941C08141300F3F10D /* XCCodeSign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		914ED9921C08141300F3F10D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914ED99F1C08141300F3F10D /* XCCodeSign.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		914ED9911C08141300F3F10D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914ED9A21C08141300F3F10D /* XCCodeSign.m in Sources */,
+				914ED9A51C08141300F3F10D /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		914ED9A71C08141300F3F10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		914ED9A81C08141300F3F10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		914ED9AA1C08141300F3F10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = XCCodeSign/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.annidy.test.XCCodeSign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		914ED9AB1C08141300F3F10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = XCCodeSign/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.annidy.test.XCCodeSign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		914ED9901C08141300F3F10D /* Build configuration list for PBXProject "XCCodeSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				914ED9A71C08141300F3F10D /* Debug */,
+				914ED9A81C08141300F3F10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		914ED9A91C08141300F3F10D /* Build configuration list for PBXNativeTarget "XCCodeSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				914ED9AA1C08141300F3F10D /* Debug */,
+				914ED9AB1C08141300F3F10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 914ED98D1C08141300F3F10D /* Project object */;
+}
