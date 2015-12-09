@@ -39,19 +39,21 @@ end
 
 line = fho:read()
 while line ~= nil do
-	pbxlines[#pbxlines+1] = line
-	if debug_stack > 0 or string.find(line, "/* Debug */", 1, true) then
 ::search::
+    pbxlines[#pbxlines+1] = line
+	if debug_stack > 0 or string.find(line, "/* Debug */", 1, true) then
 		if string.find(line, "DEBUG_INFORMATION_FORMAT") then
 			pbxlines[#pbxlines] = quite_replace(line, "dwarf", true)
 		elseif string.find(line, "ONLY_ACTIVE_ARCH") then
 			pbxlines[#pbxlines] = quite_replace(line, "YES", true)
+        elseif string.find(line, "LD_GENERATE_MAP_FILE") then
+            pbxlines[#pbxlines] = quite_replace(line, "NO", true)
 		elseif string.find(line, "CODE_SIGN_IDENTITY ") then
 			pbxlines[#pbxlines] = quite_replace(line, "iPhone Developer")
 			-- check next line, incase not exist
 			line = fho:read()
 			if not string.find(line, "CODE_SIGN_IDENTITY[sdk=", 1, true) then
-				pbxlines[#pbxlines+1] = [["CODE_SIGN_IDENTITY[sdk=iphoneos*]" = ]]..mycodesign..";"
+				pbxlines[#pbxlines+1] = [["CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "]]..mycodesign.."\";"
 				pbxlines[#pbxlines+1] = line
 			else
 				goto search
